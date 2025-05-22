@@ -22,7 +22,7 @@ Notre structure pour gérer, créer et propulser des projets sur **FiveM**.
 
 - [Next.js](https://nextjs.org)
 - [Tailwind CSS](https://tailwindcss.com)
-- [Magic UI](https://magicui.design) — pour les animations et composants stylés
+- [Magic UI](https://magicui.design) 
 
 ---
 

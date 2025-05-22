@@ -7,8 +7,6 @@ import { Particles } from "@/components/magicui/particles"
 export default function Home() {
   return (
     <main className="relative w-full h-screen overflow-hidden bg-black text-white">
-      {/* Fond Ripple */}
-
 
       {/* Particules par-dessus Ripple */}
       <div className="absolute inset-0 z-10 pointer-events-none">

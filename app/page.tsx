@@ -1,15 +1,36 @@
-import Meteors from "@/components/magicui/meteors";
+"use client"
+
+import { MorphingText } from "@/components/magicui/morphing-text"
+import { Ripple } from "@/components/magicui/ripple"
+import { Particles } from "@/components/magicui/particles"
 
 export default function Home() {
   return (
-    <main className="">
-      <div className="relative bg-black flex h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
-        <Meteors number={30} />
-        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-t from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-          Next JS
-        </span>
-        <span className="text-white/50 p-4">Shadcn + Magic UI</span>
+    <main className="relative w-full h-screen overflow-hidden bg-black text-white">
+      {/* Fond Ripple */}
+
+
+      {/* Particules par-dessus Ripple */}
+      <div className="absolute inset-0 z-10 pointer-events-none">
+        <Particles
+          className="w-full h-full"
+          quantity={150}
+          color="#ffffff" // Blanc = visible sur fond noir
+        />
+      </div>
+
+      {/* Texte centré par-dessus tout */}
+      <div className="relative z-20 flex items-center justify-center h-full px-4">
+        <MorphingText
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center"
+          texts={[
+            "ADDVEO",
+            "Propulse vos idées",
+            "Gère vos projets",
+            "Vous accompagne",
+          ]}
+        />
       </div>
     </main>
-  );
+  )
 }

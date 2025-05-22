@@ -8,10 +8,14 @@ const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
-export const metadata: Metadata = {
-  title: "Project",
-  description: "Next JS project template with Shadcn UI, Magic UI installed",
+export const metadata = {
+  title: "Addveo - SAS",
+  description: "Site officiel d'Addveo",
+  icons: {
+    icon: "/addveof.png", 
+  },
 };
+
 
 export default function RootLayout({
   children,
@@ -19,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
